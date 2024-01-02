@@ -35,10 +35,6 @@
       ::-webkit-scrollbar-thumb {
         background-color: rgba(255, 255, 255, 0.5);
       }
-      audio {
-        visibility: hidden;
-        position: absolute;
-      }
     </style>
   </head>
   <body>
@@ -54,7 +50,6 @@
       <source src="Soft Corporate.mp3" type="audio/mp3" />
       Your browser does not support the audio element.
     </audio>
-
     <script type="text/javascript">
       // create the panorama player with the container
       pano = new pano2vrPlayer("container");
@@ -65,8 +60,6 @@
       window.addEventListener("load", function () {
         pano.readConfigUrlAsync("pano.xml");
       });
-
-      // Get the audio element
     </script>
 
     <script>
@@ -80,7 +73,6 @@
         });
       });
     </script>
-
     <noscript>
       <p><b>Please enable Javascript!</b></p>
     </noscript>
