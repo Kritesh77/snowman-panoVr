@@ -45,11 +45,11 @@
     <script src="webxr/webxr-polyfill.min.js"></script>
     <div id="container" style="width: 100%; height: 100%; overflow: hidden">
       <br />Loading...<br /><br />
-      <audio id="backgroundAudio" controls autoplay loop>
-        <source src="Soft Corporate.mp3" type="audio/mp3" />
-        Your browser does not support the audio element.
-      </audio>
     </div>
+    <audio id="backgroundAudio" controls autoplay loop>
+      <source src="Soft Corporate.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
     <script type="text/javascript">
       // create the panorama player with the container
       pano = new pano2vrPlayer("container");
@@ -61,6 +61,7 @@
         pano.readConfigUrlAsync("pano.xml");
       });
     </script>
+
     <script>
       //   Play the audio when the page is loaded
       document.addEventListener("DOMContentLoaded", function () {
